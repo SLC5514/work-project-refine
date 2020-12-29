@@ -1,0 +1,894 @@
+// [hide-img] {
+//     background: url(../../images/design_world_detail/detail_s1.png);
+//     background: url(../../images/design_world_detail/detail_s2.png);
+//     background: url(../../images/design_world_detail/detail_s3.png);
+//     background: url(../../images/design_world_detail/detail_s4.png);
+//     background: url(../../images/design_world_detail/detail_s5.png);
+//     background: url(../../images/design_world_detail/detail_s6.png);
+//     background: url(../../images/design_world_detail/detail_s7.png);
+//     // 盛泽
+//     background: url(../../images/design_world_detail/shengze/shengze_d1.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_d2.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_d3.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_d4.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_d5.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_map.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_img1.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_img2.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_img3.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_img4.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_img5.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_img6.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_img7.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_img8.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_img9.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_img10.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_img11.png);
+//     background: url(../../images/design_world_detail/shengze/shengze_img12.png);
+//     // 桐乡
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_d1.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_d2.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_d3.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_d4.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_d5.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_map.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_img1.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_img2.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_img3.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_img4.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_img5.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_img6.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_img7.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_img8.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_img9.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_img10.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_img11.png);
+//     background: url(../../images/design_world_detail/tongxiang/tongxiang_img12.png);
+//     // 南通
+//     background: url(../../images/design_world_detail/nantong/nantong_d1.png);
+//     background: url(../../images/design_world_detail/nantong/nantong_d2.png);
+//     background: url(../../images/design_world_detail/nantong/nantong_d3.png);
+//     background: url(../../images/design_world_detail/nantong/nantong_d4.png);
+//     background: url(../../images/design_world_detail/nantong/nantong_d5.png);
+//     background: url(../../images/design_world_detail/nantong/nantong_img1.png);
+//     background: url(../../images/design_world_detail/nantong/nantong_img2.png);
+//     background: url(../../images/design_world_detail/nantong/nantong_img3.png);
+//     background: url(../../images/design_world_detail/nantong/nantong_img4.png);
+//     background: url(../../images/design_world_detail/nantong/nantong_img5.png);
+//     background: url(../../images/design_world_detail/nantong/nantong_img6.png);
+//     background: url(../../images/design_world_detail/nantong/nantong_img7.png);
+//     background: url(../../images/design_world_detail/nantong/nantong_img8.png);
+//     background: url(../../images/design_world_detail/nantong/nantong_img9.png);
+//     // 广州
+//     background: url(../../images/design_world_detail/guangzhou/guangzhou_d1.png);
+//     background: url(../../images/design_world_detail/guangzhou/guangzhou_d2.png);
+//     background: url(../../images/design_world_detail/guangzhou/guangzhou_d3.png);
+//     background: url(../../images/design_world_detail/guangzhou/guangzhou_d4.png);
+//     background: url(../../images/design_world_detail/guangzhou/guangzhou_d5.png);
+//     background: url(../../images/design_world_detail/guangzhou/guangzhou_img1.png);
+//     background: url(../../images/design_world_detail/guangzhou/guangzhou_img2.png);
+//     background: url(../../images/design_world_detail/guangzhou/guangzhou_img3.png);
+//     background: url(../../images/design_world_detail/guangzhou/guangzhou_img4.png);
+//     background: url(../../images/design_world_detail/guangzhou/guangzhou_img5.png);
+//     background: url(../../images/design_world_detail/guangzhou/guangzhou_img6.png);
+//     background: url(../../images/design_world_detail/guangzhou/guangzhou_img7.png);
+//     background: url(../../images/design_world_detail/guangzhou/guangzhou_img8.png);
+//     // 绍兴
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_d1.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_d2.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_d3.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_d4.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_d5.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_d6.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_d7.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_img1.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_img2.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_img3.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_img4.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_img5.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_img6.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_img7.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_img8.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_img9.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_img10.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_img11.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_img12.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_img13.png);
+//     background: url(../../images/design_world_detail/shaoxing/shaoxing_img14.png);
+// }
+
+.content {
+    padding-top: 0.64rem;
+    padding-bottom: 0.8rem;
+    h1 {
+        font-size: 0.68rem;
+        font-weight: bold;
+        margin-bottom: 0.1rem;
+    }
+    address {
+        font-size: 0.18rem;
+        margin-bottom: 0.4rem;
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 0.15rem;
+            height: 0.2rem;
+            margin-right: 0.08rem;
+            margin-top: -0.02rem;
+            vertical-align: middle;
+            background: url(/images/design_world_detail/icon_position_black.png)
+                no-repeat center / contain;
+        }
+    }
+    .title {
+        font-size: 0.3rem;
+        font-weight: bold;
+        margin-bottom: 0.24rem;
+    }
+    p {
+        font-size: 0.16rem;
+        line-height: 0.24rem;
+        span {
+            font-weight: bold;
+        }
+        & + p {
+            margin-top: 0.1rem;
+        }
+    }
+    .aside {
+        position: absolute;
+        top: 0;
+        right: 0;
+        // transition: top 0.3s ease;
+        .title {
+            font-weight: bold;
+            margin-bottom: 0.16rem;
+        }
+        .merchants {
+            padding: 0.4rem 0.24rem;
+            border: 0.01rem solid #e2e2e2;
+            span {
+                font-size: 0.18rem;
+                margin-bottom: 0.24rem;
+                & + p {
+                    margin-top: 0.32rem;
+                }
+            }
+            ul {
+                margin-top: 0.08rem;
+                margin-bottom: 0.32rem;
+                li {
+                    div {
+                        height: 0.32rem;
+                        line-height: 0.32rem;
+                        text-align: center;
+                        background: #f1f1f1;
+                        font-size: 0.14rem;
+                    }
+                    margin-top: 0.16rem;
+                }
+            }
+            .subtitle {
+                font-size: 0.16rem;
+                font-weight: bold;
+                margin-bottom: 0.16rem;
+                padding-top: 0.23rem;
+                border-top: 0.01rem solid #f2f2f2;
+            }
+            p {
+                font-size: 0.16rem;
+                & + p {
+                    margin-top: 0.12rem;
+                }
+                .weixin {
+                    display: inline-block;
+                    width: 0.2rem;
+                    height: 0.16rem;
+                    margin-right: 0.08rem;
+                    margin-top: -0.02rem;
+                    vertical-align: middle;
+                    background: url(/images/design_world_detail/icon_weixin.png)
+                        no-repeat center / contain;
+                }
+                .phone {
+                    display: inline-block;
+                    width: 0.16rem;
+                    height: 0.16rem;
+                    margin-right: 0.12rem;
+                    margin-top: -0.02rem;
+                    vertical-align: middle;
+                    background: url(/images/design_world_detail/icon_phone_black.png)
+                        no-repeat center / contain;
+                }
+            }
+        }
+        .review {
+            margin-top: 0.4rem;
+            padding: 0.4rem 0.24rem;
+            border: 0.01rem solid #e2e2e2;
+            .title {
+                margin-bottom: 0.32rem;
+            }
+            .video-box {
+                height: 1.87rem;
+                border-radius: 0.05rem;
+            }
+        }
+        .activities {
+            margin-top: 0.48rem;
+            padding-bottom: 0.48rem;
+            .title {
+                font-weight: bold;
+                margin-bottom: 0.32rem;
+            }
+            ul {
+                li {
+                    & + li {
+                        margin-top: 0.4rem;
+                    }
+                    & > a {
+                        display: block;
+                        padding: 0.24rem;
+                        border: 0.01rem solid #e2e2e2;
+                        transition: border-color 0.3s ease;
+                        &:hover {
+                            border-color: #2b2b2b;
+                            .img-box img {
+                                transform: scale(1.5);
+                            }
+                        }
+                    }
+                    .img-box {
+                        margin-bottom: 0.24rem;
+                        border-radius: 0.05rem;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 1.87rem;
+                            max-width: none;
+                            background: #eee;
+                            border-radius: 0.05rem;
+                            transition: transform 0.3s ease;
+                        }
+                    }
+                    p {
+                        max-height: 0.54rem;
+                        overflow: hidden;
+                        font-size: 0.18rem;
+                        line-height: 0.27rem;
+                        margin-bottom: 0.1rem;
+                    }
+                    span {
+                        font-size: 0.16rem;
+                        color: #646464;
+                    }
+                }
+            }
+            .text-btn {
+                display: block;
+                width: 2.82rem;
+                height: 0.48rem;
+                line-height: 0.48rem;
+                font-size: 0.16rem;
+                text-align: center;
+                margin: 0.4rem auto 0;
+                border: 0.01rem solid #2b2b2b;
+                &:hover {
+                    color: #fff;
+                    background: #2b2b2b;
+                }
+            }
+        }
+    }
+    .banner-box {
+        margin-bottom: 0.54rem;
+        .swiper-gallery {
+            .swiper-slide {
+                width: 6.9rem;
+                img {
+                    width: 100%;
+                    max-width: none;
+                    border-radius: 0.05rem;
+                }
+            }
+            .swiper-pagination {
+                width: auto;
+                left: auto;
+                bottom: auto;
+                right: 0.76rem;
+                top: 0.1rem;
+                width: 0.85rem;
+                height: 0.4rem;
+                line-height: 0.4rem;
+                background: rgba(0, 0, 0, 0.68);
+                border-radius: 0.2rem;
+                font-size: 0.24rem;
+                color: #fff;
+            }
+            .swiper-button-next {
+                width: 0.56rem;
+                height: 0.56rem;
+                left: calc((6.9rem + 0.24rem) - (0.56rem + 0.24rem) / 2);
+                border-radius: 50%;
+                box-shadow: 0 0.04rem 0.08rem rgba(0,0,0,0.15);
+                background: url(/images/aboutus/icon_abus_next.png)
+                    no-repeat center / contain;
+                opacity: 0.9;
+                &:after {
+                    display: none;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        .swiper-thumbs {
+            margin-top: 0.24rem;
+            height: 0.9rem;
+            .swiper-slide {
+                // width: 1.3rem;
+                opacity: 0.6;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                    max-height: 0.9rem;
+                    border-radius: 0.05rem;
+                }
+            }
+            .swiper-slide-thumb-active {
+                opacity: 1;
+            }
+        }
+    }
+    .introduction {
+        margin-bottom: 1.05rem;
+    }
+    .position-introduction {
+        margin-bottom: 1rem;
+        p {
+            margin-bottom: 0.4rem;
+        }
+        img {
+            width: 100%;
+            max-width: none;
+        }
+    }
+    .services-resources {
+        margin-bottom: 1rem;
+        p {
+            margin-bottom: 0.4rem;
+        }
+        .swiper-resources {
+            .swiper-slide {
+                width: 3.33rem;
+                img {
+                    width: 100%;
+                    max-width: none;
+                }
+                span {
+                    display: inline-block;
+                    margin-top: 0.16rem;
+                    font-size: 0.16rem;
+                    color: #646464;
+                }
+            }
+            .swiper-button-next {
+                width: 0.56rem;
+                height: 0.56rem;
+                margin-top: -0.4rem;
+                left: calc((3.33rem + 0.24rem) * 2 - (0.56rem + 0.24rem) / 2);
+                border-radius: 50%;
+                box-shadow: 0 0.04rem 0.08rem rgba(0,0,0,0.15);
+                background: url(/images/aboutus/icon_abus_next.png)
+                    no-repeat center / contain;
+                opacity: 0.9;
+                &:after {
+                    display: none;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .infrastructure {
+        margin-bottom: 1rem;
+        .title {
+            margin-bottom: 0.4rem;
+        }
+        .more-btn {
+            text-align: center;
+            margin-top: 0.48rem;
+        }
+        ul {
+            margin-top: -0.4rem;
+            li {
+                margin-top: 0.4rem;
+                padding-left: 0.48rem;
+                font-size: 0.18rem;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    width: 0.3rem;
+                    height: 0.3rem;
+                    background: #eee;
+                }
+                &.i1:before {
+                    background: url(/images/design_world_detail/infrastructure_i1.png)
+                        no-repeat center / contain;
+                }
+                &.i2:before {
+                    background: url(/images/design_world_detail/infrastructure_i2.png)
+                        no-repeat center / contain;
+                }
+                &.i3:before {
+                    background: url(/images/design_world_detail/infrastructure_i3.png)
+                        no-repeat center / contain;
+                }
+                &.i4:before {
+                    background: url(/images/design_world_detail/infrastructure_i4.png)
+                        no-repeat center / contain;
+                }
+                &.i5:before {
+                    background: url(/images/design_world_detail/infrastructure_i5.png)
+                        no-repeat center / contain;
+                }
+                &.i6:before {
+                    background: url(/images/design_world_detail/infrastructure_i6.png)
+                        no-repeat center / contain;
+                }
+                &.i7:before {
+                    background: url(/images/design_world_detail/infrastructure_i7.png)
+                        no-repeat center / contain;
+                }
+                &.i8:before {
+                    background: url(/images/design_world_detail/infrastructure_i8.png)
+                        no-repeat center / contain;
+                }
+                &.i9:before {
+                    background: url(/images/design_world_detail/infrastructure_i9.png)
+                        no-repeat center / contain;
+                }
+            }
+        }
+    }
+    .supporting-services {
+        .title {
+            margin-bottom: 0.64rem;
+        }
+        ul {
+            margin-top: -1rem;
+            li {
+                height: 5.64rem;
+                margin-top: 1rem;
+                &.v-align {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                img {
+                    width: 100%;
+                    max-width: none;
+                    margin: 0 auto;
+                }
+                .tit {
+                    width: 0.66rem;
+                    height: 0.75rem;
+                    margin-bottom: 0.38rem;
+                    background: #eee;
+                    &.tit1 {
+                        background: url(/images/design_world_detail/services_t1.png)
+                            no-repeat center / contain;
+                    }
+                    &.tit2 {
+                        background: url(/images/design_world_detail/services_t2.png)
+                            no-repeat center / contain;
+                    }
+                    &.tit3 {
+                        background: url(/images/design_world_detail/services_t3.png)
+                            no-repeat center / contain;
+                    }
+                    &.tit4 {
+                        background: url(/images/design_world_detail/services_t4.png)
+                            no-repeat center / contain;
+                    }
+                    &.tit5 {
+                        background: url(/images/design_world_detail/services_t5.png)
+                            no-repeat center / contain;
+                    }
+                    &.tit6 {
+                        background: url(/images/design_world_detail/services_t6.png)
+                            no-repeat center / contain;
+                    }
+                    &.tit7 {
+                        background: url(/images/design_world_detail/services_t7.png)
+                            no-repeat center / contain;
+                    }
+                }
+                .tp {
+                    font-size: 0.2rem;
+                    font-weight: bold;
+                    margin-bottom: 0.1rem;
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        height: 0.17rem;
+                        margin-left: 0.12rem;
+                        vertical-align: middle;
+                    }
+                    &.i-activity:after {
+                        width: 0.99rem;
+                        height: 0.16rem;
+                        background: url(/images/design_world_detail/icon_activity.png)
+                            no-repeat center / contain;
+                    }
+                    &.i-content:after {
+                        width: 2.79rem;
+                        background: url(/images/design_world_detail/icon_content.png)
+                            no-repeat center / contain;
+                    }
+                    &.i-value:after {
+                        width: 0.7rem;
+                        height: 0.18rem;
+                        background: url(/images/design_world_detail/icon_value.png)
+                            no-repeat center / contain;
+                    }
+                    &.i-positioning:after {
+                        width: 1.39rem;
+                        background: url(/images/design_world_detail/icon_positioning.png)
+                            no-repeat center / contain;
+                    }
+                    &.i-plan:after {
+                        width: 0.63rem;
+                        height: 0.17rem;
+                        background: url(/images/design_world_detail/icon_plan.png)
+                            no-repeat center / contain;
+                    }
+                }
+                .bt {
+                    font-size: 0.16rem;
+                    font-weight: bold;
+                    margin-bottom: 0.08rem;
+                    span {
+                        vertical-align: top;
+                    }
+                    p {
+                        max-width: 91%;
+                        display: inline-block;
+                        font-size: 0.16rem;
+                        font-weight: normal;
+                    }
+                }
+                p {
+                    font-size: 0.16rem;
+                    line-height: 0.24rem;
+                    & + .tp {
+                        margin-top: 0.18rem;
+                    }
+                    & + .bt {
+                        margin-top: 0.16rem;
+                    }
+                }
+            }
+        }
+    }
+    .no-mb {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .content {
+        .aside {
+            .merchants {
+                padding: 0.16rem;
+            }
+            .review .video-box {
+                height: 1.5rem;
+            }
+        }
+        .banner-box {
+            .swiper-gallery {
+                .swiper-slide {
+                    width: 5.72rem;
+                }
+                .swiper-button-next {
+                    width: 0.48rem;
+                    height: 0.48rem;
+                    left: calc((5.72rem + 0.15rem) - (0.48rem + 0.15rem) / 2);
+                }
+            }
+            .swiper-thumbs {
+                margin-top: 0.16rem;
+                height: 0.71rem;
+                .swiper-slide {
+                    // width: 1.07rem;
+                    img {
+                        max-height: 0.71rem;
+                    }
+                }
+            }
+        }
+        .services-resources {
+            .swiper-resources {
+                .swiper-slide {
+                    width: 2.78rem;
+                }
+                .swiper-button-next {
+                    width: 0.48rem;
+                    height: 0.48rem;
+                    left: calc(
+                        (2.78rem + 0.16rem) * 2 - (0.48rem + 0.16rem) / 2
+                    );
+                }
+            }
+        }
+        .supporting-services ul li {
+            margin-top: 0.8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .tit {
+                margin-bottom: 0.28rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .content {
+        .introduction,
+        .position-introduction,
+        .aside,
+        .services-resources,
+        .infrastructure {
+            margin-bottom: 0.72rem;
+        }
+        .aside {
+            position: initial;
+            .merchants {
+                ul {
+                    display: flex;
+                    li + li {
+                        margin-left: 0.12rem;
+                    }
+                }
+            }
+            .review {
+                padding: 0;
+                border: none;
+                .title {
+                    margin-bottom: 0.24rem;
+                }
+                .video-box {
+                    height: 4.3rem;
+                }
+            }
+            .activities ul li + li {
+                margin-top: 0;
+            }
+        }
+        .banner-box {
+            margin-bottom: 0.34rem;
+            .swiper-gallery {
+                .swiper-slide {
+                    width: 6.7rem;
+                }
+                .swiper-button-next {
+                    width: 0.56rem;
+                    height: 0.56rem;
+                    left: calc((6.7rem + 0.2rem) - (0.56rem + 0.2rem) / 2);
+                }
+            }
+            .swiper-thumbs {
+                margin-top: 0.2rem;
+                height: 0.83rem;
+                .swiper-slide {
+                    // width: 1.26rem;
+                    img {
+                        max-height: 0.83rem;
+                    }
+                }
+            }
+        }
+        .services-resources {
+            .swiper-resources {
+                .swiper-slide {
+                    width: 3.16rem;
+                }
+                .swiper-button-next {
+                    width: 0.56rem;
+                    height: 0.56rem;
+                    left: calc((3.16rem + 0.3rem) * 2 - (0.56rem + 0.3rem) / 2);
+                }
+            }
+        }
+        .supporting-services ul li {
+            height: auto;
+            display: block;
+            &:nth-child(2n) {
+                margin-top: 0.34rem;
+            }
+            .tit {
+                margin-bottom: 0.38rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .content {
+        h1 {
+            font-size: 0.45rem;
+            margin-bottom: 0.2rem;
+        }
+        address {
+            font-size: 0.24rem;
+            margin-bottom: 0.34rem;
+            &:before {
+                width: 0.18rem;
+                height: 0.24rem;
+            }
+        }
+        .title {
+            font-size: 0.36rem;
+            margin-bottom: 0.2rem;
+        }
+        p {
+            font-size: 0.28rem;
+            line-height: 0.42rem;
+        }
+        .aside {
+            .merchants {
+                padding: 0.3rem;
+                .title {
+                    font-size: 0.36rem;
+                }
+                span {
+                    font-size: 0.28rem;
+                    margin-bottom: 0.2rem;
+                }
+                ul {
+                    display: block;
+                    li {
+                        div {
+                            height: 0.52rem;
+                            line-height: 0.52rem;
+                            font-size: 0.24rem;
+                        }
+                        & + li {
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .subtitle {
+                    font-size: 0.28rem;
+                    margin-bottom: 0.25rem;
+                }
+                p {
+                    font-size: 0.24rem;
+                    & + p {
+                        margin-top: 0.2rem;
+                    }
+                    .weixin {
+                        width: 0.28rem;
+                        height: 0.23rem;
+                        margin-right: 0.2rem;
+                    }
+                    .phone {
+                        width: 0.23rem;
+                        height: 0.23rem;
+                        margin-right: 0.26rem;
+                    }
+                }
+            }
+            .review .video-box {
+                height: 3.88rem;
+            }
+            .activities {
+                padding-bottom: 0;
+                .text-btn {
+                    width: 3.6rem;
+                    height: 0.64rem;
+                    line-height: 0.64rem;
+                    font-size: 0.24rem;
+                    margin-top: 0.5rem;
+                }
+                ul li {
+                    & + li {
+                        margin-top: 0.36rem;
+                    }
+                    & > a {
+                        display: flex;
+                        padding: 0;
+                        border: none;
+                        & > .info-box {
+                            display: flex;
+                            flex-wrap: wrap;
+                            flex-direction: column;
+                            justify-content: space-around;
+                        }
+                        &:hover .img-box img {
+                            transform: none;
+                        }
+                    }
+                    .img-box {
+                        margin-bottom: 0;
+                    }
+                    p {
+                        max-height: 0.84rem;
+                        font-size: 0.28rem;
+                        line-height: 0.42rem;
+                    }
+                    span {
+                        font-size: 0.24rem;
+                    }
+                }
+            }
+        }
+        .banner-box {
+            margin-right: -0.3rem;
+            margin-bottom: 0.52rem;
+            .swiper-gallery {
+                .swiper-slide {
+                    width: 6.54rem;
+                }
+                .swiper-button-next {
+                    width: 0.56rem;
+                    height: 0.56rem;
+                    left: calc((6.54rem + 0.2rem) - (0.56rem + 0.2rem) / 2);
+                }
+            }
+            .swiper-thumbs {
+                margin-top: 0.2rem;
+                margin-right: 0.3rem;
+                height: 0.81rem;
+                .swiper-slide {
+                    // width: 1.22rem;
+                    img {
+                        max-height: 0.81rem;
+                    }
+                }
+            }
+        }
+        .services-resources {
+            .swiper-resources {
+                margin-left: -0.3rem;
+                margin-right: -0.3rem;
+                padding-left: 0.3rem;
+                padding-right: 0.3rem;
+                .swiper-slide {
+                    width: 3.3rem;
+                    span {
+                        font-size: 0.24rem;
+                    }
+                }
+            }
+        }
+        .infrastructure ul li {
+            font-size: 0.24rem;
+        }
+        .supporting-services ul li {
+            .tp {
+                font-size: 0.28rem;
+                margin-bottom: 0.16rem;
+            }
+            .bt {
+                font-size: 0.28rem;
+                margin-bottom: 0.16rem;
+                p {
+                    font-size: 0.24rem;
+                    line-height: 0.36rem;
+                }
+            }
+            p {
+                font-size: 0.24rem;
+                line-height: 0.36rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.content {
+    min-height: calc(100vh - 6.25rem);
+    overflow: hidden;
+    .tab-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0.1rem;
+        border-bottom: 0.02rem solid #f3f3f3;
+        margin-top: 0.6rem;
+        margin-bottom: 0.44rem;
+        a {
+            color: #646464;
+            position: relative;
+            &:hover, &.on {
+                color: #2b2b2b;
+            }
+            &:before {
+                bottom: -0.14rem;
+                height: 0.04rem;
+            }
+        }
+    }
+    .tab-content {
+        min-height: 6vh;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .content {
+        .tab-box {
+            margin-top: 0.64rem;
+        }
+        .activity-list li {
+            width: 3.3rem;
+        }
+    }
+}

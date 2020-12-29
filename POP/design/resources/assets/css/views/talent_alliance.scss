@@ -1,0 +1,103 @@
+// [hide-img] {
+//     background-image: url(../../images/talent_alliance/ta_yq1.png);
+//     background-image: url(../../images/talent_alliance/ta_yq2.png);
+//     background-image: url(../../images/talent_alliance/ta_yq3.png);
+//     background-image: url(../../images/talent_alliance/ta_yq4.png);
+//     background-image: url(../../images/talent_alliance/ta_qy1.png);
+//     background-image: url(../../images/talent_alliance/ta_qy2.png);
+//     background-image: url(../../images/talent_alliance/ta_qy3.png);
+//     background-image: url(../../images/talent_alliance/ta_qy4.png);
+//     background-image: url(../../images/talent_alliance/ta_qy5.png);
+//     background-image: url(../../images/talent_alliance/ta_pt1.png);
+// }
+
+.content {
+    overflow: hidden;
+    .tab-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0.1rem;
+        border-bottom: 0.02rem solid #f3f3f3;
+        margin-top: 0.8rem;
+        margin-bottom: 0.95rem;
+        a {
+            color: #646464;
+            position: relative;
+            &:before {
+                bottom: -0.14rem;
+                height: 0.04rem;
+            }
+        }
+    }
+    .tab-content {
+        margin-bottom: 0.6rem;
+        li {
+            display: none;
+            &.on {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .item {
+                font-size: 0.16rem;
+                line-height: 0.32rem;
+                margin-bottom: 0.4rem;
+                & > img {
+                    width: 100%;
+                }
+                & > div {
+                    margin-top: -0.53rem;
+                    p {
+                        padding: 0.9rem 0.55rem 0;
+                        background: #f0f0f0;
+                    }
+                    &:after {
+                        content: "";
+                        display: block;
+                        height: 0.7rem;
+                        margin-top: -0.02rem;
+                        background: url(/images/talent_alliance/ta_bg.png)
+                            no-repeat center / cover;
+                    }
+                }
+                &.mt1 {
+                    margin-top: -1.5rem;
+                }
+                &.mt2 {
+                    margin-top: -0.6rem;
+                }
+            }
+            &:last-child {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .content .tab-content li .item {
+        &.mt2 {
+            margin-top: -0.95rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .content .tab-content li .item {
+        font-size: 0.28rem;
+        line-height: 0.42rem;
+        & > div {
+            margin-top: -0.8rem;
+            p {
+                padding-top: 1.2rem;
+            }
+            &:after {
+                height: 0.95rem;
+            }
+        }
+        &.mt1, &.mt2 {
+            margin-top: 0;
+        }
+    }
+}

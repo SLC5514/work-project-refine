@@ -1,0 +1,178 @@
+// [hide-img] {
+//     background-image: url(../../images/contactus/cnt_sj1.png);
+//     background-image: url(../../images/contactus/cnt_sj2.png);
+//     background-image: url(../../images/contactus/cnt_sj3.png);
+//     background-image: url(../../images/contactus/cnt_sj4.png);
+//     background-image: url(../../images/contactus/cnt_sj5.png);
+// }
+
+.content {
+    margin-bottom: 0.48rem;
+    .banner {
+        display: flex;
+        height: 2.93rem;
+        margin-bottom: 0.32rem;
+        background: url(/images/contactus/cnt_banner.png) no-repeat center /
+            auto 100%;
+        & > div {
+            width: auto;
+            max-width: 992px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            .avatar {
+                width: 0.84rem;
+                height: 0.84rem;
+                margin-right: 0.24rem;
+                background: url(/images/contactus/cnt_avatar.png) no-repeat
+                    center / contain;
+            }
+            .title {
+                font-size: 0.4rem;
+                margin-bottom: 0.16rem;
+                font-weight: bold;
+            }
+            .info {
+                font-size: 0.2rem;
+            }
+        }
+    }
+    section {
+        padding-top: 0.32rem;
+        padding-bottom: 0.32rem;
+        .bg-title {
+            font-size: 0.24rem;
+            font-weight: bold;
+            margin-bottom: 0.45rem;
+            &:after {
+                width: 0.7rem;
+                height: 0.7rem;
+            }
+        }
+        & > ul {
+            max-width: 8.6rem;
+            display: flex;
+            border-radius: 0.05rem;
+            overflow: hidden;
+            margin: 0 auto;
+            & > li {
+                position: relative;
+                &>img {
+                    width: 100%;
+                }
+                ul {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    padding: 0.4rem 0.35rem 0.4rem 0.5rem;
+                    font-size: 0.16rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    li {
+                        position: relative;
+                        & + li {
+                            margin-top: 0.24rem;
+                        }
+                        &:first-child:before {
+                            content: '';
+                            position: absolute;
+                            top: 0.05rem;
+                            left: -0.22rem;
+                            width: 0.12rem;
+                            height: 0.16rem;
+                            background: url(/images/contactus/icon_position.png) no-repeat center / contain;
+                        }
+                        &:last-child:before {
+                            content: '';
+                            position: absolute;
+                            top: 0.05rem;
+                            left: -0.24rem;
+                            width: 0.14rem;
+                            height: 0.14rem;
+                            background: url(/images/contactus/icon_phone.png) no-repeat center / contain;
+                        }
+                    }
+                    .tit {
+                        font-weight: bold;
+                        margin-bottom: 0.04rem;
+                    }
+                }
+                &.code-info {
+                    font-size: 0.14rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background: #f6f6f6 url(/images/contactus/cnt_logo.png)
+                        no-repeat 95% bottom / auto 1.47rem;
+                    img {
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        margin-bottom: 0.13rem;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .content section > ul > li ul {
+        max-width: 7.5rem;
+        padding: 0.22rem 0.25rem 0.22rem 0.42rem;
+        li + li {
+            margin-top: 0.1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .content .banner > div {
+        padding: 0;
+        .avatar {
+            margin-right: 0.15rem;
+        }
+    }
+    .content section {
+        .bg-title {
+            font-size: 0.4rem;
+            &:after {
+                width: 0.9rem;
+                height: 0.9rem;
+            }
+        }
+        & > ul > li {
+            width: 100%;
+            ul {
+                max-width: none;
+                padding: 0.3rem 0.3rem 0.3rem 0.7rem;
+                font-size: 0.24rem;
+                li {
+                    &:first-child:before {
+                        top: 0.12rem;
+                        left: -0.31rem;
+                        width: 0.21rem;
+                        height: 0.25rem;
+                    }
+                    &:last-child:before {
+                        top: 0.12rem;
+                        left: -0.34rem;
+                        width: 0.24rem;
+                        height: 0.24rem;
+                    }
+                }
+                .tit {
+                    font-size: 0.3rem;
+                }
+            }
+        }
+    }
+}

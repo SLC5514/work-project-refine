@@ -1,0 +1,179 @@
+// @import '~element-ui/lib/theme-chalk/fonts/element-icons.woff';
+// @import '~element-ui/lib/theme-chalk/fonts/element-icons.ttf';
+@import '~element-ui/lib/theme-chalk/index.css';
+
+[v-cloak] {display: none;}
+
+*, *::before, *::after {box-sizing: border-box;}
+
+// reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,
+button, input, optgroup, select, textarea{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,
+main, footer, header, hgroup, menu, nav, section{display:block;}
+hr{box-sizing:content-box;height:0;overflow:visible;}
+table{border-collapse:collapse;border-spacing:0;}
+textarea{overflow: auto;}
+ol, ul{list-style:none;}
+img{border-style:none;display: flex;pointer-events: none;}
+// img, object{max-width:100%;}
+button, select{text-transform: none;}
+button,button:focus{border-style:none;background-color:transparent;outline:none;cursor:pointer;}
+a,a:hover{background-color:transparent;text-decoration:none;outline:none;color:inherit;}
+html{/* font-size:100px; */min-height:100%;position:relative;line-height:1.5;-webkit-text-size-adjust:100%;-ms-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+// @media(min-width:768px){html{font-size:100px;}}
+// @media(max-width:767px){html{font-size:85px;}}
+// @media(max-width:425px){html{font-size:56.6667px;}}
+// @media(max-width:375px){html{font-size:50px;}}
+body{
+    font-family:'Microsoft YaHei', 'PingFang SC', 'Lantinghei SC', 'HanHei SC', 'Helvetica Neue', 'Open Sans', Arial, 'Hiragino Sans GB', '微软雅黑', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+    font-weight:400;
+    font-size:14px;
+    color:#2B2B2B;
+    background: #fff;
+    user-select: none;
+    backface-visibility: hidden;
+}
+
+/* z-index 规划使用；
+    按十分位区分；
+    内容：0~9；（0）
+    预留1：10~19；（1）
+    头底：20~29；（2）
+    预留2：30~39；（3）
+    蒙层：40~49；（4）
+    预留3：50~59；（5）
+    弹窗：60~69；（6）
+    预留4：70~79；（7） */
+
+// main
+.fl{float:left;}
+.fr{float:right;}
+.affix{position: fixed;}
+.center{text-align: center;}
+.hide,[hidden]{display:none;}
+.clear:before{content:"";clear:both;}
+.clear:after{content:"";clear:both;display:table;}
+.mask{position:fixed;top:0;left:0;right:0;bottom:0;;background:#000;opacity:0.5;filter:alpha(opacity=50);z-index:40;}
+.ellipsis{display: block;width: 100%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.ofhide{overflow: hidden;}
+
+/* page style */
+.login-page-inner {
+    position: relative;
+    z-index: 99;
+    width: 450px;
+    padding: 20px 40px;
+    background: white;
+    box-shadow: 0px 0px 2px rgba(58, 127, 158, 0.35);
+    border-radius: 4px;
+    margin: 50px auto;
+    .title {
+        padding: 10px 0 30px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #666;
+    }
+}
+
+.el-menu-aside {
+    min-height: 100vh;
+    &:not(.el-menu--collapse) {
+        width: 200px;
+    }
+    .logo-box {
+        .logo {
+            display: inline-block;
+            width: 24px;
+            height: 50px;
+            margin-right: 5px;
+            background: url(/images/common/logo.png) no-repeat
+                center / contain;
+        }
+        span {
+            font-size: 16px;
+            font-weight: bold;
+            color: #666;
+        }
+    }
+    &.el-menu--collapse {
+        .logo-box .logo {
+            margin-right: 0;
+        }
+    }
+}
+
+.ad-table,
+.news-table {
+    img {
+        max-width: 100px;
+    }
+}
+
+.ad-detail-form,
+.news-detail-form {
+    .el-input {
+        width: 400px;
+    }
+    .el-textarea {
+        width: 400px;
+    }
+    p {
+        margin: 0;
+        line-height: 1.5;
+    }
+}
+
+.uploader {
+    .el-upload {
+        border: 1px dashed #d9d9d9;
+        border-radius: 6px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    .el-upload:hover {
+        border-color: #409eff;
+    }
+    .uploader-icon {
+        font-size: 28px;
+        color: #8c939d;
+        width: 400px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        background: #fff;
+    }
+    .uploader-img {
+        width: 400px;
+        display: block;
+    }
+}
+
+.is-error .uploader .el-upload {
+    border-color: red;
+}
+
+// 隐藏 tinymce alert
+.tox .tox-notifications-container .tox-notification {
+    display: none;
+}
+
+.app-container {
+   .permission-tree {
+       margin-bottom: 30px;
+   }
+}

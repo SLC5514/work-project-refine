@@ -1,0 +1,107 @@
+// [hide-img] {
+//     background-image: url(../../images/design_world_distribution/ds1.png);
+//     background-image: url(../../images/design_world_distribution/ds2.png);
+//     background-image: url(../../images/design_world_distribution/ds3.png);
+//     background-image: url(../../images/design_world_distribution/ds4.png);
+//     background-image: url(../../images/design_world_distribution/ds5.png);
+//     background-image: url(../../images/design_world_distribution/ds6.png);
+//     background-image: url(../../images/design_world_distribution/ds7.png);
+//     background-image: url(../../images/design_world_distribution/ds8.png);
+// }
+
+.content {
+    padding-top: 0.6rem;
+    padding-bottom: 1rem;
+    .design-list {
+        overflow: hidden;
+        margin-top: -0.48rem;
+        li {
+            margin-top: 0.48rem;
+            &>a {
+                display: block;
+                border-radius: 0.04rem;
+                overflow: hidden;
+                &:hover {
+                    .img-box img {
+                        transform: scale(1.5);
+                    }
+                    // .info {
+                    //     border-color: #2b2b2b;
+                    // }
+                    .underline-btn {
+                        color: #2b2b2b;
+                        &:before{
+                            opacity: 1;
+                            transform: scaleX(1);
+                        }
+                    }
+                }
+            }
+            .img-box {
+                position: relative;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    max-width: none;
+                    background: #eee;
+                    transition: transform 0.3s ease;
+                }
+                .icon {
+                    position: absolute;
+                    top: 0.12rem;
+                    right: 0.12rem;
+                    width: 0.6rem;
+                    height: 0.24rem;
+                    background: url(/images/design_world_distribution/icon_zhaoshang.png)
+                        no-repeat center / contain;
+                }
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 1.16rem;
+                text-align: center;
+                border: 0.01rem solid #e6e6e6;
+                border-top: 0;
+                border-radius: 0 0 0.04rem 0.04rem;
+                background: #fff url(/images/design_world_distribution/icon_position_big.png)
+                    no-repeat right bottom / contain;
+                // transition: border-color 0.3s ease;
+            }
+            .title {
+                font-size: 0.18rem;
+                margin: 0.08rem 0;
+                font-weight: bold;
+            }
+            .underline-btn {
+                font-size: 0.16rem;
+                &:after {
+                    width: 0.19rem;
+                    height: 0.12rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .content {
+        padding-top: 0.8rem;
+        .design-list li {
+            .title {
+                font-size: 0.24rem;
+            }
+            & > a {
+                font-size: 0.24rem;
+                &:hover .img-box img {
+                    transform: none;
+                }
+            }
+            .underline-btn {
+                font-weight: normal;
+                font-size: 0.24rem;
+            }
+        }
+    }
+}
